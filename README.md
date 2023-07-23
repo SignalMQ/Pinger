@@ -1,6 +1,4 @@
 # Pinger
-A tool for check network availability.
-
 Hi everyone! It's my first project in AvaloniaUI framework and it's simplest tool for network testing.
 
 The coolest thing about Avalonia is that the windows can change color depending on the settings in the system. This specifically happened to me on Linux:
