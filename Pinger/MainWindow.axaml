@@ -1,0 +1,27 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Height="500"
+        Width="650"
+        MinHeight="500"
+        MinWidth="650"
+        x:Class="Pinger.MainWindow"
+        CornerRadius="18"
+        WindowStartupLocation="CenterScreen"
+        Title="Pinger">
+        <Border Opacity="0.95" Padding="5" CornerRadius="0,0,9,9">
+                <Grid RowDefinitions="0.1*,0.18*,0.2*,*,0.2*" ColumnDefinitions="*,*,*">
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="ADDRESS:" VerticalAlignment="Center"/>
+                        <TextBox x:Name="Address" Grid.Row="1" Grid.Column="0" VerticalContentAlignment="Center" CornerRadius="3,0,0,3" FontSize="16"/>
+                        <TextBlock Grid.Row="0" Grid.Column="1" Text="PORT:" VerticalAlignment="Center"/>
+                        <TextBox x:Name="Port" Grid.Row="1" Grid.Column="1" VerticalContentAlignment="Center" CornerRadius="0" FontSize="16"/>
+                        <TextBlock Grid.Row="0" Grid.Column="2" Text="PORT CHECKS INCREASE:" VerticalAlignment="Center"/>
+                        <NumericUpDown x:Name="Increase" Grid.Row="1" Grid.Column="2" CornerRadius="0,3,3,0" VerticalContentAlignment="Center" AllowSpin="True" Minimum="1"  Value="1" FormatString="0" FontSize="16"/>
+                        <Button x:Name="Check" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Classes="DefaultStyle" Content="CHECK"/>
+                        <TextBox x:Name="Result" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" IsReadOnly="True"/>
+                        <Button x:Name="Clear" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Classes="DefaultStyle" Content="CLEAR"/>
+                </Grid>
+        </Border>
+</Window>

@@ -1,0 +1,2 @@
+/home/sobirjon/RiderProjects/Pinger/Pinger/bin/Release/net6.0/linux-x64/publish/Pinger.pdb
+/home/sobirjon/RiderProjects/Pinger/Pinger/bin/Release/net6.0/linux-x64/publish/Pinger
